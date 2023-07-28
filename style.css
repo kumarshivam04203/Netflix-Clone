@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+.top-header{
+    height: 90vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, .7),rgba(0,0,0,0.7)), url("/Netflix clone/images/header-image.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 8px solid #353535;
+    /* padding: 10px 8px; */
+}
+
+.navbar{
+    height: 86px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 10px 0; */
+    width: 80%
+    
+}
+
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+
+nav button{
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.language-btn{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 7px 10px;
+}
+
+.language-btn i{
+    margin-right: 8px;
+    width: 25px;
+    
+}
+
+.language-btn img{
+    width: 10px;
+    margin-left: 10px;
+}
+
+
+.header-content{
+    position: absolute;
+    left: 20%;
+    top: 32%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+    text-align: center;
+    margin-top: 80px;
+}
+
+.header-content h1{
+    font-size: 46px;
+    line-height: 40px;
+    font-weight: 700;
+    /* width: 100%; */
+    width: 1000px;
+}
+
+.header-content h3{
+    font-weight: 400;
+    margin-bottom: 18px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.header-content p{
+    font-size: 18px;
+}
+
+.email-signup{
+    /* width: 600px; */
+    /* background: #fff; */
+    
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    overflow: hidden;
+    
+    
+    
+}
+
+.email-signup input{
+    /* flex: 1; */
+    /*border: 0;
+    outline: 0; */
+    width: 380px;
+    background-color: rgba(34, 24, 18, .4);
+    padding: 20px 10px 8px;
+    /* margin-left: 120px; */
+    font-size: 1.2rem;
+    border: 1.5px solid gray;
+    border-radius: 4px;
+    color: #fff;
+    
+}
+
+
+.email-signup button{
+    background: #db0001;
+    border: 0;
+    outline: 0;
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 0 0 8px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+
+.email-signup button i{
+    padding-left: 8px;
+    
+
+}
+
+/* features section................ */
+.features{
+    
+    /* padding: 50px 12%; */
+    font-size: 22px;
+}
+
+.features .row{
+    border-bottom: 8px solid #353535;
+}
+
+.row{
+    padding: 50px 12%;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    /* padding: 50px 0; */
+    
+}
+
+.text-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.img-col img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+.features h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+/* faq............ */
+
+.faq{
+    padding: 72px 0;
+    text-align: center;
+    font-size: 32px;
+    border-bottom: 8px solid #353535;
+}
+
+.feq h2{
+    /* font-size: 25px; */
+    font-weight: 400;
+}
+
+.accordian{
+    margin: 60px auto;
+    width: 100%;
+    max-width: 80%;
+}
+
+.accordian li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.content p{
+    font-size: 20px;
+}
+
+label::after{
+    content: "+";
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.4s;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding: 30px 20px;
+
+}
+
+.accordian input[type="radio"]:checked + label::after{
+    transform: rotate(135deg);
+}
+
+.faq .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+.faq small{
+    font-size: 16px;
+}
+
+/* footer.......... */
+.footer{
+    padding: 50px 15% 10px;
+    border-top: 6ps solid #333;
+    color: #777;
+
+}
+
+.footer h2{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a{
+    display: block;
+    text-decoration: none;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer .row{
+    align-items:  flex-start;
+    padding: 10px 0;
+}
+
+.footer .language-btn{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.copyright-text{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* media queries for small screen */
+
+@media only screen and (max-width: 600px){
+    .logo{
+        width: 100px;
+    }
+    nav button{
+        padding: 5px 10px;
+    }
+    nav .language-btn{
+        padding: 4px 8px;
+    }
+    .top-header{
+        position: unset;
+        transform: none;
+        padding-top: 150px;
+    }
+    .top-header h1{
+        font-size: 20px;
+    }
+    .email-signup button{
+        font-size: 12px;
+        padding: 10px 15px;
+    }
+
+    .text-col, .img-col{
+        flex-basis:  100%;
+    }
+    .features h2{
+        font-size: 20px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordian .content{
+        font-size: 14px;
+    }
+    .accordian li label{
+        font-size: 14px;
+        padding: 10px;
+    }
+    label::after{
+        font-size: 32px;
+    }
+}
